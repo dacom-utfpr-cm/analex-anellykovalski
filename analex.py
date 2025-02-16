@@ -31,7 +31,7 @@ states = ['q0','qId', 'qId1', 'qNum', 'qNum1', 'qF', 'qL1', 'qO', 'qA', 'qT', 'q
 
 labels = ['INT', 'IF', 'ELSE', 'VOID', 'RETURN', 'WHILE', 'FLOAT,', 'MINUS', 'PLUS', 'TIMES', 'DIVIDE', 'LESS', 'LESS_EQUAL',
     'GREATER_EQUAL', 'GREATER', 'EQUALS', 'DIFFERENT', 'LPAREN', 'RPAREN', 'LBRACKETS', 'RBRACKETS', 'LBRACES', 'RBRACES',
-    'ATTRIBUTION', 'SEMICOLON', 'COMMA', 'NUMERO', ' ID ']
+    'ATTRIBUTION', 'SEMICOLON', 'COMMA', 'NUMBER', ' ID ']
 
 ##transicoes##
 transitions = {
@@ -84,7 +84,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -144,7 +144,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -205,7 +205,7 @@ transitions = {
                 ' ' : 'qId',
                 '\t' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -239,7 +239,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -299,7 +299,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -333,7 +333,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -393,7 +393,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -453,7 +453,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -513,7 +513,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -547,7 +547,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -607,7 +607,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -667,7 +667,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -727,7 +727,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -787,7 +787,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -847,7 +847,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -881,7 +881,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -941,7 +941,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1001,7 +1001,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1061,7 +1061,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1095,7 +1095,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1155,7 +1155,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1215,7 +1215,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1275,7 +1275,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1335,7 +1335,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1369,7 +1369,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1429,7 +1429,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1489,7 +1489,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1549,7 +1549,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1609,7 +1609,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'qId',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1643,7 +1643,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1703,7 +1703,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1763,7 +1763,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1823,7 +1823,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1835,7 +1835,13 @@ transitions = {
                 '0' : 'qNum',
             },
             'qDivide' : {
-                 '+': 'qPlus',
+ 'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -1856,11 +1862,8 @@ transitions = {
                 'b': 'qId',
                 'c': 'qId',
                 'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
                 'g': 'qId',
                 'h': 'qId',
-                'i': 'qId',
                 'j': 'qId',
                 'k': 'qId',
                 'l': 'qId',
@@ -1869,12 +1872,9 @@ transitions = {
                 'o': 'qId',
                 'p': 'qId',
                 'q': 'qId',
-                'r': 'qId',
                 's': 'qId',
                 't': 'qId',
                 'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
                 'x': 'qId',
                 'y': 'qId',
                 'z' : 'qId',
@@ -1883,7 +1883,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -1943,7 +1943,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2003,7 +2003,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2063,7 +2063,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2123,7 +2123,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2183,7 +2183,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2243,7 +2243,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2303,7 +2303,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2363,7 +2363,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2375,7 +2375,13 @@ transitions = {
                 '0' : 'qNum',
             },
             'qDParenteses' : {
-                 '+': 'qPlus',
+               'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2396,11 +2402,8 @@ transitions = {
                 'b': 'qId',
                 'c': 'qId',
                 'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
                 'g': 'qId',
                 'h': 'qId',
-                'i': 'qId',
                 'j': 'qId',
                 'k': 'qId',
                 'l': 'qId',
@@ -2409,12 +2412,9 @@ transitions = {
                 'o': 'qId',
                 'p': 'qId',
                 'q': 'qId',
-                'r': 'qId',
                 's': 'qId',
                 't': 'qId',
                 'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
                 'x': 'qId',
                 'y': 'qId',
                 'z' : 'qId',
@@ -2423,7 +2423,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2435,7 +2435,13 @@ transitions = {
                 '0' : 'qNum',
             },
             'qEParenteses' : {
-                                 '+': 'qPlus',
+                'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2456,11 +2462,8 @@ transitions = {
                 'b': 'qId',
                 'c': 'qId',
                 'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
                 'g': 'qId',
                 'h': 'qId',
-                'i': 'qId',
                 'j': 'qId',
                 'k': 'qId',
                 'l': 'qId',
@@ -2469,12 +2472,9 @@ transitions = {
                 'o': 'qId',
                 'p': 'qId',
                 'q': 'qId',
-                'r': 'qId',
                 's': 'qId',
                 't': 'qId',
                 'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
                 'x': 'qId',
                 'y': 'qId',
                 'z' : 'qId',
@@ -2483,67 +2483,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
-                '2' : 'qNum',
-                '3' : 'qNum',
-                '4' : 'qNum',
-                '5' : 'qNum',
-                '6' : 'qNum',
-                '7' : 'qNum',
-                '8' : 'qNum',
-                '9' : 'qNum',
-                '0' : 'qNum',
-            },
-            'qEChaves' : {
-                                 '+': 'qPlus',
-                '-': 'qMinus',
-                '*': 'qVezes',
-                '/': 'qDivide',
-                '<': 'qLess',
-                '>': 'qMaior',
-                '=': 'qIgual',
-                '!': 'qDiferent',
-                '(': 'qDParenteses',
-                ')': 'qEParenteses',
-                '[': 'qDColchete',
-                ']': 'qEColchete',
-                '{': 'qDChaves',
-                '}': 'qEChaves',
-                ';': 'qPontoVirgula',
-                ',': 'qPonto',
-                #id de letra#
-                'a': 'qId',
-                'b': 'qId',
-                'c': 'qId',
-                'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
-                'g': 'qId',
-                'h': 'qId',
-                'i': 'qId',
-                'j': 'qId',
-                'k': 'qId',
-                'l': 'qId',
-                'm': 'qId',
-                'n': 'qId',
-                'o': 'qId',
-                'p': 'qId',
-                'q': 'qId',
-                'r': 'qId',
-                's': 'qId',
-                't': 'qId',
-                'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
-                'x': 'qId',
-                'y': 'qId',
-                'z' : 'qId',
-                ##padrao##
-                '\t' : 'q0',
-                '\n' : 'q0',
-                ' ' : 'q0',
-                ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2555,7 +2495,13 @@ transitions = {
                 '0' : 'qNum',
             },
             'qDChaves' : {
-                                 '+': 'qPlus',
+               'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2576,11 +2522,8 @@ transitions = {
                 'b': 'qId',
                 'c': 'qId',
                 'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
                 'g': 'qId',
                 'h': 'qId',
-                'i': 'qId',
                 'j': 'qId',
                 'k': 'qId',
                 'l': 'qId',
@@ -2589,12 +2532,9 @@ transitions = {
                 'o': 'qId',
                 'p': 'qId',
                 'q': 'qId',
-                'r': 'qId',
                 's': 'qId',
                 't': 'qId',
                 'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
                 'x': 'qId',
                 'y': 'qId',
                 'z' : 'qId',
@@ -2603,7 +2543,67 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
+                '2' : 'qNum',
+                '3' : 'qNum',
+                '4' : 'qNum',
+                '5' : 'qNum',
+                '6' : 'qNum',
+                '7' : 'qNum',
+                '8' : 'qNum',
+                '9' : 'qNum',
+                '0' : 'qNum',
+            }, 
+            'qEChaves' : {
+               'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
+                '-': 'qMinus',
+                '*': 'qVezes',
+                '/': 'qDivide',
+                '<': 'qLess',
+                '>': 'qMaior',
+                '=': 'qIgual',
+                '!': 'qDiferent',
+                '(': 'qDParenteses',
+                ')': 'qEParenteses',
+                '[': 'qDColchete',
+                ']': 'qEColchete',
+                '{': 'qDChaves',
+                '}': 'qEChaves',
+                ';': 'qPontoVirgula',
+                ',': 'qPonto',
+                #id de letra#
+                'a': 'qId',
+                'b': 'qId',
+                'c': 'qId',
+                'd': 'qId',
+                'g': 'qId',
+                'h': 'qId',
+                'j': 'qId',
+                'k': 'qId',
+                'l': 'qId',
+                'm': 'qId',
+                'n': 'qId',
+                'o': 'qId',
+                'p': 'qId',
+                'q': 'qId',
+                's': 'qId',
+                't': 'qId',
+                'u': 'qId',
+                'x': 'qId',
+                'y': 'qId',
+                'z' : 'qId',
+                ##padrao##
+                '\t' : 'q0',
+                '\n' : 'q0',
+                ' ' : 'q0',
+                ##numeros##
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2615,7 +2615,13 @@ transitions = {
                 '0' : 'qNum',
             }, 
             'qDColchete' : {
-                                 '+': 'qPlus',
+                'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2636,11 +2642,8 @@ transitions = {
                 'b': 'qId',
                 'c': 'qId',
                 'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
                 'g': 'qId',
                 'h': 'qId',
-                'i': 'qId',
                 'j': 'qId',
                 'k': 'qId',
                 'l': 'qId',
@@ -2649,12 +2652,9 @@ transitions = {
                 'o': 'qId',
                 'p': 'qId',
                 'q': 'qId',
-                'r': 'qId',
                 's': 'qId',
                 't': 'qId',
                 'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
                 'x': 'qId',
                 'y': 'qId',
                 'z' : 'qId',
@@ -2663,7 +2663,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2675,7 +2675,13 @@ transitions = {
                 '0' : 'qNum',
             },
             'qEColchete' : {
-                                 '+': 'qPlus',
+                'i': 'q_int1',
+                'e': 'q_else1',
+                'f': 'qF',
+                'r': 'q_return1',
+                'v': 'q_void1',
+                'w': 'qW',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2696,11 +2702,8 @@ transitions = {
                 'b': 'qId',
                 'c': 'qId',
                 'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
                 'g': 'qId',
                 'h': 'qId',
-                'i': 'qId',
                 'j': 'qId',
                 'k': 'qId',
                 'l': 'qId',
@@ -2709,12 +2712,9 @@ transitions = {
                 'o': 'qId',
                 'p': 'qId',
                 'q': 'qId',
-                'r': 'qId',
                 's': 'qId',
                 't': 'qId',
                 'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
                 'x': 'qId',
                 'y': 'qId',
                 'z' : 'qId',
@@ -2723,7 +2723,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2783,7 +2783,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2843,7 +2843,7 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2872,38 +2872,38 @@ transitions = {
                 ';': 'qPontoVirgula',
                 ',': 'qPonto',
                 #id de letra#
-                'a': 'qId',
-                'b': 'qId',
-                'c': 'qId',
-                'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
-                'g': 'qId',
-                'h': 'qId',
-                'i': 'qId',
-                'j': 'qId',
-                'k': 'qId',
-                'l': 'qId',
-                'm': 'qId',
-                'n': 'qId',
-                'o': 'qId',
-                'p': 'qId',
-                'q': 'qId',
-                'r': 'qId',
-                's': 'qId',
-                't': 'qId',
-                'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
-                'x': 'qId',
-                'y': 'qId',
-                'z' : 'qId',
+                'a': 'qId1',
+                'b': 'qId1',
+                'c': 'qId1',
+                'd': 'qId1',
+                'e': 'qId1',
+                'f': 'qId1',
+                'g': 'qId1',
+                'h': 'qId1',
+                'i': 'qId1',
+                'j': 'qId1',
+                'k': 'qId1',
+                'l': 'qId1',
+                'm': 'qId1',
+                'n': 'qId1',
+                'o': 'qId1',
+                'p': 'qId1',
+                'q': 'qId1',
+                'r': 'qId1',
+                's': 'qId1',
+                't': 'qId1',
+                'u': 'qId1',
+                'v': 'qId1',
+                'w': 'qId1',
+                'x': 'qId1',
+                'y': 'qId1',
+                'z' : 'qId1',
                 ##padrao##
                 '\t' : 'q0',
                 '\n' : 'q0',
-                ' ' : 'qId1',
+                ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -2933,38 +2933,38 @@ transitions = {
                 ';': 'qPontoVirgula',
                 ',': 'qPonto',
                 #id de letra#
-                'a': 'qId',
-                'b': 'qId',
-                'c': 'qId',
-                'd': 'qId',
-                'e': 'qId',
-                'f': 'qId',
-                'g': 'qId',
-                'h': 'qId',
-                'i': 'qId',
-                'j': 'qId',
-                'k': 'qId',
-                'l': 'qId',
-                'm': 'qId',
-                'n': 'qId',
-                'o': 'qId',
-                'p': 'qId',
-                'q': 'qId',
-                'r': 'qId',
-                's': 'qId',
-                't': 'qId',
-                'u': 'qId',
-                'v': 'qId',
-                'w': 'qId',
-                'x': 'qId',
-                'y': 'qId',
-                'z' : 'qId',
+                'a': 'qId1',
+                'b': 'qId1',
+                'c': 'qId1',
+                'd': 'qId1',
+                'e': 'qId1',
+                'f': 'qId1',
+                'g': 'qId1',
+                'h': 'qId1',
+                'i': 'qId1',
+                'j': 'qId1',
+                'k': 'qId1',
+                'l': 'qId1',
+                'm': 'qId1',
+                'n': 'qId1',
+                'o': 'qId1',
+                'p': 'qId1',
+                'q': 'qId1',
+                'r': 'qId1',
+                's': 'qId1',
+                't': 'qId1',
+                'u': 'qId1',
+                'v': 'qId1',
+                'w': 'qId1',
+                'x': 'qId1',
+                'y': 'qId1',
+                'z' : 'qId1',
                 ##padrao##
                 '\t' : 'q0',
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
+                '1' : 'qNum',
                 '2' : 'qNum',
                 '3' : 'qNum',
                 '4' : 'qNum',
@@ -3022,18 +3022,18 @@ transitions = {
                 ##padrao##
                 '\t' : 'q0',
                 '\n' : 'q0',
-                ' ' : 'qNum1',
+                ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
-                '2' : 'qNum',
-                '3' : 'qNum',
-                '4' : 'qNum',
-                '5' : 'qNum',
-                '6' : 'qNum',
-                '7' : 'qNum',
-                '8' : 'qNum',
-                '9' : 'qNum',
-                '0' : 'qNum',
+                '1' : 'qNum1',
+                '2' : 'qNum1',
+                '3' : 'qNum1',
+                '4' : 'qNum1',
+                '5' : 'qNum1',
+                '6' : 'qNum1',
+                '7' : 'qNum1',
+                '8' : 'qNum1',
+                '9' : 'qNum1',
+                '0' : 'qNum1',
             },
             'qNum1' : {
                  '+': 'qPlus',
@@ -3084,27 +3084,27 @@ transitions = {
                 '\n' : 'q0',
                 ' ' : 'q0',
                 ##numeros##
-                '1' : 'qNum',,
-                '2' : 'qNum',
-                '3' : 'qNum',
-                '4' : 'qNum',
-                '5' : 'qNum',
-                '6' : 'qNum',
-                '7' : 'qNum',
-                '8' : 'qNum',
-                '9' : 'qNum',
-                '0' : 'qNum',
+                '1' : 'qNum1',
+                '2' : 'qNum1',
+                '3' : 'qNum1',
+                '4' : 'qNum1',
+                '5' : 'qNum1',
+                '6' : 'qNum1',
+                '7' : 'qNum1',
+                '8' : 'qNum1',
+                '9' : 'qNum1',
+                '0' : 'qNum1',
             }
 }
 
 initial_state = "q0"
 
-tabela_saida = {
+output_table = {
     'q0'  : '',
-    'qId' : '',
-    'qId1' : 'ID\n', 
-    'qNum' : '',
-    'qNum1' : 'NUMERO\n',
+    'qId' : 'ID\n',
+    'qId1' : '', 
+    'qNum' : 'NUMBER\n',
+    'qNum1' : '',
     'qF' : '',
     'qL1' : '',
     'qO' : '',
@@ -3160,13 +3160,17 @@ moore = Moore(
     fullList,
     labels,
     transitions,
-    initial_state = initial_state,
-    tabela_saida = tabela_saida
+    "q0",
+    output_table
 )
+
 
 def main():
     check_cm = False
     check_key = False
+
+    if(len(sys.argv) < 2):
+        raise TypeError(error_handler.newError(check_key, 'ERR-LEX-USE'))
     
     for idx, arg in enumerate(sys.argv):
         aux = arg.split('.')
@@ -3174,55 +3178,58 @@ def main():
             check_cm = True
             idx_cm = idx
 
-        if arg == "-k":
+        if(arg == "-k"):
             check_key = True
-
-    if check_key:
-        if len(sys.argv) < 3:
-            raise TypeError(error_handler.newError(check_key, 'ERR-LEX-USE'))
-    else:
-        if len(sys.argv) < 2:
-            raise TypeError(error_handler.newError(check_key, 'ERR-LEX-USE'))
-        
-    if not check_cm:
-        raise IOError(error_handler.newError(check_key, 'ERR-LEX-NOT-CM'))
     
-    if not os.path.exists(sys.argv[idx_cm]):
+    if check_key and len(sys.argv) < 3:
+        raise TypeError(error_handler.newError(check_key, 'ERR-LEX-USE'))
+    elif not check_cm:
+      raise IOError(error_handler.newError(check_key, 'ERR-LEX-NOT-CM'))
+    elif not os.path.exists(sys.argv[idx_cm]):
         raise IOError(error_handler.newError(check_key, 'ERR-LEX-FILE-NOT-EXISTS'))
-
     else:
-        # Print da configuração do automato caso check_key não é verdadeiro
-        if (not check_key):
-            print(  states,
-                    fullList,
-                    labels,
-                    transitions,
-                    initial_state,
-                    tabela_saida )
-
-
         data = open(sys.argv[idx_cm])
         source_file = data.read()
-        data.close()  # Fecha o arquivo após a leitura
-
-        if not check_cm:
-            print("Definição da Máquina")
-            print(moore)
-            print("Entrada:")
-            print(source_file)
-            print("Lista de Tokens:")
 
         try:
-            output = moore.get_output_from_string(source_file)
-            print(output)  # Se não houver erro, imprime os tokens normalmente
-        except ValueError as e:  # Se detectar um caractere inválido
-            raise ValueError(error_handler.newError(check_key, 'ERR-LEX-INV-CHAR'))
+            if not check_key:
+                print("Definição da Máquina:")
+                print(moore)
+                print("Entrada:")
+                print(source_file)
+                print("Lista de Tokens:")
+            
+            print(moore.get_output_from_string(source_file).rstrip('\n'))
 
+            moore_to_jflap(states, fullList, tokens, transitions, 'q0', output_table, 'maquina.jff')
+            
+        except Exception as e:
+            error_msg = str(e)
+    
+            # Tentando encontrar o caractere que causou o erro na entrada
+            for i, char in enumerate(source_file):
+                try:
+                    moore.get_output_from_string(source_file[:i+1])  # Tenta processar até o caractere atual
+                except Exception:
+                    # Encontramos a posição do erro
+                    error_index = i
+                    break
+            else:
+                error_index = None  # Caso não encontre
+            
+            if error_index is not None:
+                # Encontrar a linha e coluna do erro
+                line = source_file[:error_index].count('\n') + 1
+                last_newline = source_file[:error_index].rfind('\n')
+                column = (error_index - last_newline) if last_newline != -1 else error_index + 1
+                raise IOError(error_handler.newError(check_key, 'ERR-LEX-INV-CHAR', line, column, valor=e))
+            else:
+                line, column = "Desconhecido", "Desconhecido"
 
 if __name__ == "__main__":
     try:
         main()
     except Exception as e:
         print(e)
-    except (ValueError, TypeError) as e:
-        print(f"Erro de valor ou tipo: {e}")
+    except (ValueError, TypeError):
+        print(e)
