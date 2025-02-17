@@ -3167,67 +3167,53 @@ moore = Moore(
 
 
 def main():
-    check_cm = False
-    check_key = False
+    check_cm, check_key = False, False
+    idx_cm = None
 
-    if(len(sys.argv) < 2):
-        raise TypeError(error_handler.newError(check_key, 'ERR-LEX-USE'))
-    
+    if len(sys.argv) < 2:
+        raise TypeError(error_handler.newError(False, 'ERR-LEX-USE'))
+
     for idx, arg in enumerate(sys.argv):
-        aux = arg.split('.')
-        if aux[-1] == 'cm':
+        if arg.endswith('.cm'):
             check_cm = True
             idx_cm = idx
-
-        if(arg == "-k"):
+        elif arg == "-k":
             check_key = True
-    
-    if check_key and len(sys.argv) < 3:
-        raise TypeError(error_handler.newError(check_key, 'ERR-LEX-USE'))
-    elif not check_cm:
-      raise IOError(error_handler.newError(check_key, 'ERR-LEX-NOT-CM'))
-    elif not os.path.exists(sys.argv[idx_cm]):
-        raise IOError(error_handler.newError(check_key, 'ERR-LEX-FILE-NOT-EXISTS'))
-    else:
-        data = open(sys.argv[idx_cm])
-        source_file = data.read()
 
-        try:
-            if not check_key:
-                print("Definição da Máquina:")
-                print(moore)
-                print("Entrada:")
-                print(source_file)
-            
-            print(moore.get_output_from_string(source_file).rstrip('\n')) 
-                       
-        except Exception as e:
-            error_msg = str(e)
+    if check_key and len(sys.argv) < 3:
+        raise TypeError(error_handler.newError(True, 'ERR-LEX-USE'))
+    if not check_cm:
+        raise IOError(error_handler.newError(check_key, 'ERR-LEX-NOT-CM'))
+    if not os.path.exists(sys.argv[idx_cm]):
+        raise IOError(error_handler.newError(check_key, 'ERR-LEX-FILE-NOT-EXISTS'))
+
+    with open(sys.argv[idx_cm], 'r') as file:
+        source_file = file.read()
+
+    try:
+        if not check_key:
+            print("Definição da Máquina:")
+            print(moore)
+            print("Entrada:")
+            print(source_file)
+        
+        print(moore.get_output_from_string(source_file).rstrip('\n'))
     
-            # Tentando encontrar o caractere que causou o erro na entrada
-            for i, char in enumerate(source_file):
-                try:
-                    moore.get_output_from_string(source_file[:i+1])  # Tenta processar até o caractere atual
-                except Exception:
-                    # Encontramos a posição do erro
-                    error_index = i
-                    break
-            else:
-                error_index = None  # Caso não encontre
-            
-            if error_index is not None:
-                # Encontrar a linha e coluna do erro
-                line = source_file[:error_index].count('\n') + 1
-                last_newline = source_file[:error_index].rfind('\n')
-                column = (error_index - last_newline) if last_newline != -1 else error_index + 1
-                raise IOError(error_handler.newError(check_key, 'ERR-LEX-INV-CHAR', line, column, valor=e))
-            else:
-                line, column = "Desconhecido", "Desconhecido"
+    except Exception as e:
+        error_index = next((i for i in range(len(source_file)) 
+                            if moore.get_output_from_string(source_file[:i+1]) is None), None)
+        
+        if error_index is not None:
+            line = source_file[:error_index].count('\n') + 1
+            last_newline = source_file[:error_index].rfind('\n')
+            column = (error_index - last_newline) if last_newline != -1 else error_index + 1
+            raise IOError(error_handler.newError(check_key, 'ERR-LEX-INV-CHAR', line, column, valor=str(e)))
+        else:
+            raise IOError(error_handler.newError(check_key, 'ERR-LEX-UNKNOWN', "Desconhecido", "Desconhecido"))
+
 
 if __name__ == "__main__":
     try:
         main()
     except Exception as e:
-        print(e)
-    except (ValueError, TypeError):
         print(e)
