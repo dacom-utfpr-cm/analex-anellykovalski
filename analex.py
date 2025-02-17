@@ -22,10 +22,10 @@ fullList = alfabeto + numeros + caracter
 
 ##estados##
 
-states = ['q0','qId', 'qId1', 'qNum', 'qNum1', 'qF', 'qL1', 'qO', 'qA', 'qT', 'qIF', 'qIF1', 'q_else1', 'q_else2', 'q_else3', 'q_else4', 'q_int1', 'q_int2', 'q_int3', 'q_int4', 'q_return1', 'q_return2', 'q_return3', 'q_return4', 'q_return5', 'q_return6',
-'q_void1', 'q_void2', 'q_void3', 'q_void4', 'qW','qH','qI', 'qL', 'qE', 'qPlus', 'qMinus', 'qVezes', 'qDivide', 'qLess', 'qLessEqual', 'qMaior', 'qMaiorIgual', 'qIgual',
- 'qDiferent', 'qDParenteses', 'qEParenteses', 'qDColchete', 'qEColchete', 'qDChaves', 'qEChaves', 'qIgualIgual', 'qPontoVirgula', 'qPonto',
- 'qDiferent1']
+states = ['q0', 'id', 'qId', 'qId1', 'qNum', 'qNum1', 'qF', 'qL1', 'qO', 'qA', 'qT', 'qIF', 'q_else1', 'q_else2', 'q_else3', 'q_else4', 'q_int1',
+          'q_int2', 'q_int3', 'q_int4', 'q_return1', 'q_return2', 'q_return3', 'q_return4', 'q_return5', 'q_return6','q_void1', 'q_void2', 'q_void3',
+          'q_void4', 'qW','qH','qI', 'qL', 'qE', 'qPlus', 'qMinus', 'qVezes', 'qDivide', 'qLess', 'qLessEqual', 'qMaior', 'qMaiorIgual', 'qIgual',
+         'qDiferent', 'qDParenteses', 'qEParenteses', 'qDColchete', 'qEColchete', 'qDChaves', 'qEChaves', 'qIgualIgual', 'qPontoVirgula', 'qPonto', 'qDiferent1']
 
 ##labels##
 
@@ -95,7 +95,7 @@ transitions = {
                 '9' : 'qNum',
                 '0' : 'qNum',
             },
-            id : {
+            'id' : {
                 '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
@@ -2735,7 +2735,7 @@ transitions = {
                 '0' : 'qNum',
             },
             'qPontoVirgula' : {
-                                 '+': 'qPlus',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2795,7 +2795,7 @@ transitions = {
                 '0' : 'qNum',
             },
             'qPonto' : {
-                                 '+': 'qPlus',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2855,7 +2855,7 @@ transitions = {
                 '0' : 'qNum',
             },
             'qId' : {
-                 '+': 'qPlus',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2916,7 +2916,7 @@ transitions = {
             },
             'qId1' : {
             ## fim do ID
-             '+': 'qPlus',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -2976,7 +2976,7 @@ transitions = {
                 '0' : 'qNum',
             },
             'qNum' : {
-                 '+': 'qPlus',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -3036,7 +3036,7 @@ transitions = {
                 '0' : 'qNum1',
             },
             'qNum1' : {
-                 '+': 'qPlus',
+                '+': 'qPlus',
                 '-': 'qMinus',
                 '*': 'qVezes',
                 '/': 'qDivide',
@@ -3110,8 +3110,7 @@ output_table = {
     'qO' : '',
     'qA' : '',
     'qT' : 'FLOAT\n',
-    'qIF' : '',
-    'qIF1' : 'IF\n', 
+    'qIF' : 'IF\n',
     'q_else1' : '',
     'q_else2' : '',
     'q_else3' : '',
@@ -3155,6 +3154,8 @@ output_table = {
     'qPonto' : 'COMMA\n',
     'qDiferent1': 'DIFFERENT\n'
 }
+
+## maquina de moore ##
 moore = Moore(
     states,
     fullList,
@@ -3197,12 +3198,9 @@ def main():
                 print(moore)
                 print("Entrada:")
                 print(source_file)
-                print("Lista de Tokens:")
             
-            print(moore.get_output_from_string(source_file).rstrip('\n'))
-
-            moore_to_jflap(states, fullList, tokens, transitions, 'q0', output_table, 'maquina.jff')
-            
+            print(moore.get_output_from_string(source_file).rstrip('\n')) 
+                       
         except Exception as e:
             error_msg = str(e)
     
